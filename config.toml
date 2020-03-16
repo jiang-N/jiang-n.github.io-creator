@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://example.org/"
 languageCode = "zh-Hans"
 title = "JN的博客"
 theme = "ananke"
