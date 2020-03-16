@@ -28,7 +28,7 @@ draft: false
    hugo new site quickstart
    ```
    
-2. 执行以下命令添加一个主题
+2. 执行以下命令添加一个主题，在外层目录新建.gitignore文件，写入public
    ```
    cd quickstart
    git init
@@ -70,3 +70,15 @@ draft: false
 2. 在跳转过后的页面找到安装方法
 
 3. 在config文件中更改对应的主题名即可
+
+## 上传GitHub
+1. 需要把public目录和父级目录分开上传，这也是之前创建.gitignore文件写入public的意义
+
+2. 将外层的creator目录和public分别上传到GitHub的两个仓库
+
+3. 在GitHub上存放public的仓库中点击setting选项
+   ![setting选项](https://s1.ax1x.com/2020/03/17/8tYCHP.png)
+
+4. 下拉页面找到**GitHub Pages**分类，点击下面的链接即可在GitHub上预览HTML
+   ![setting选项](https://s1.ax1x.com/2020/03/17/8tYwE6.png)
+
