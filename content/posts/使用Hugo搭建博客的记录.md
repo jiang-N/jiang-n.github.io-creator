@@ -11,27 +11,54 @@ draft: false
 ## 安装Hugo
 [下载页面](https://github.com/gohugoio/hugo/releases)
 1. 去下载页面下载hugo_xxx_Windows-64bit.zip
-2. 解压，把hugo.exe存放到创建好的hugo目录下
-3. 把上一步的路径添加到PATH中
-4. 在终端输入**hugo version**如果看到一个版本号，说明安装成功
-   ![查看是否安装成功](https://github.com/jiang-N/jiang-n.github.io/blob/master/images/20200316_01.jpg)
    
+2. 解压，把hugo.exe存放到创建好的hugo目录下
+   
+3. 把上一步的路径添加到PATH中
+   
+4. 在终端输入**hugo version**如果看到一个版本号，说明安装成功
+   ```
+   hugo version
+   ```
+   
+
 ## 搭建博客
 1. 在终端输入**hugo new site quickstart**创建一个新网站，quickstart可以替换成自己github的仓库名
-   ![创建新站点](https://github.com/jiang-N/jiang-n.github.io/blob/master/images/20200316_02.jpg)
-2. 添加一个主题，执行以下命令
-   ![添加主题](https://github.com/jiang-N/jiang-n.github.io/blob/master/images/20200316_0)3.jpg)
-3. 执行完上一步之后，接下来执行以下命令
-   ![添加主题](https://github.com/jiang-N/jiang-n.github.io/blob/master/images/20200316_0)4.jpg)
+   ```
+   hugo new site quickstart
+   ```
+   
+2. 执行以下命令添加一个主题
+   ```
+   cd quickstart
+   git init
+   git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+   ```
+
+3. 执行完上一步后执行命令
+   ```
+   echo 'theme = "ananke"' >> config.toml
+   ```
+
 4. 执行命令，创建你的第一篇博客
-   ![添加主题](https://github.com/jiang-N/jiang-n.github.io/blob/master/images/20200316_0)5.jpg)
-5. 开启Hugo服务器，执行以下命令
-   ![添加主题](https://github.com/jiang-N/jiang-n.github.io/blob/master/images/20200316_0)6.jpg)
+   ```
+   hugo new posts/my-first-post.md
+   ```
+
+5. 执行以下命令来开启Hugo服务器
+   ```
+   hugo server -D
+   ```
+
 
 ## 配置博客
 1. 打开config.toml文件，可以对博客的标题、语言等选项进行配置
-   ![配置博客](https://github.com/jiang-N/jiang-n.github.io/blob/master/images/20200316_0)7.jpg)
+   ![配置博客](https://s1.ax1x.com/2020/03/17/8tKNnO.jpg)
+
 2. 生成静态页面，执行以下命令即可在本地生成一个public文件夹
-   ![生成静态页面](https://github.com/jiang-N/jiang-n.github.io/blob/master/images/20200316_0)8.jpg)
+   ```
+   hugo -D
+   ```
+
 
 ## 更换主题
