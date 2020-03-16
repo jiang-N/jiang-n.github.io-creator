@@ -62,3 +62,11 @@ draft: false
 
 
 ## 更换主题
+[更换主题地址](https://themes.gohugo.io/)
+
+1. 进入上方网址，选择自己喜欢的主题进入主题详情页面，点击homepage按钮
+   ![homepage按钮](https://s1.ax1x.com/2020/03/17/8tlo8A.png)
+
+2. 在跳转过后的页面找到安装方法
+
+3. 在config文件中更改对应的主题名即可
